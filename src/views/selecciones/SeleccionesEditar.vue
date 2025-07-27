@@ -6,9 +6,8 @@
             
             <div class="mb-3">
                 <label class="form-label">Nombre Selección *</label>
-                <input v-model="itemLocal.nombre" type="text" class="form-control" required :class="{ 'is-invalid': bSeleccion }"/>
+                <input v-model="itemLocal.nombre" type="text" class="form-control" required/>
                 <div v-if="!itemLocal.nombre" class="invalid-feedback">El valor es requerido.</div>
-                <div v-if="itemLocal.nombre && bSeleccion" class="invalid-feedback">Ya existe una selección con ese nombre.</div>
             </div>
 
             <div class="mb-3">
