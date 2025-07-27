@@ -24,9 +24,9 @@
         <table class="table table-bordered">
             <thead class="table-light">
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">nombre</th>
-                    <th scope="col">tecnico</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Técnico</th>
                     <th></th>
                 </tr>
             </thead>

@@ -5,9 +5,8 @@
         <form @submit.prevent="emitir($event)" novalidate>
             <div class="mb-3">
                 <label class="form-label">Nombre *</label>
-                <input v-model="itemLocal.nombre" type="text" class="form-control" required :class="{ 'is-invalid': bJugador }" />
-                <div v-if="!item.nombre" class="invalid-feedback">El valor es requerido.</div>
-                <div v-if="item.nombre && bJugador" class="invalid-feedback">Ya existe un jugador con ese nombre.</div>
+                <input v-model="itemLocal.nombre" type="text" class="form-control" required/>
+                <div v-if="!itemLocal.nombre" class="invalid-feedback">El valor es requerido.</div>
             </div>
 
             <div class="mb-3">
@@ -50,8 +49,6 @@ export default {
                 "Defensa",
             ],
             seleccionesList:[],
-            jugadoresList:[],
-            bJugador: false,
         }
     },
     components: {
@@ -63,7 +60,6 @@ export default {
     mounted() {
         // Componente montado
         this.obtenerSelecciones();
-        this.obtenerJugadores();
     },
     updated() {
         // Componente actualizado
@@ -81,10 +77,6 @@ export default {
                 form.classList.add('was-validated');
                 return;
             }
-            if(this.jugadoresList.some(item => item.nombre.toLowerCase() === this.item.nombre.toLowerCase())) {
-                this.bJugador = true;
-                return;
-            }
 
             // Si es válido, puedes enviar los datos
             this.$emit('updated', this.itemLocal);
@@ -93,15 +85,6 @@ export default {
             this.axios.get(process.env.VUE_APP_API_URL + '/seleccions')
                 .then((response) => {
                     this.seleccionesList = response.data;
-                })
-                .catch((error) => {
-                    console.error(error);
-                });
-        },
-        obtenerJugadores() {
-            this.axios.get(process.env.VUE_APP_API_URL + '/jugadors')
-                .then((response) => {
-                    this.jugadoresList = response.data;
                 })
                 .catch((error) => {
                     console.error(error);

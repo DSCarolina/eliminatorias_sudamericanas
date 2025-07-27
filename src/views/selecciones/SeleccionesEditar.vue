@@ -7,8 +7,8 @@
             <div class="mb-3">
                 <label class="form-label">Nombre Selección *</label>
                 <input v-model="itemLocal.nombre" type="text" class="form-control" required :class="{ 'is-invalid': bSeleccion }"/>
-                <div v-if="!item.nombre" class="invalid-feedback">El valor es requerido.</div>
-                <div v-if="item.nombre && bSeleccion" class="invalid-feedback">Ya existe una selección con ese nombre.</div>
+                <div v-if="!itemLocal.nombre" class="invalid-feedback">El valor es requerido.</div>
+                <div v-if="itemLocal.nombre && bSeleccion" class="invalid-feedback">Ya existe una selección con ese nombre.</div>
             </div>
 
             <div class="mb-3">
@@ -30,7 +30,6 @@ export default {
             title: 'Editar Selección',
             itemLocal: { ...this.item },
             seleccionesList: [],
-            bSeleccion: false,
         }
     },
     components: {
@@ -41,8 +40,6 @@ export default {
     },
     mounted() {
         // Componente montado
-        // this.obtenerMascotas();
-        // this.obtenerUsuarios();
         this.obtenerSelecciones();
     },
     updated() {
@@ -55,23 +52,18 @@ export default {
         // métodos que se pueden llamar desde la plantilla o desde otras partes del componente.
         emitir(event) {
             const form = event.target;
-
             // Si no es válido, muestra los errores con Bootstrap
             if (!form.checkValidity()) {
                 form.classList.add('was-validated');
                 return;
             }
             
-            if(this.seleccionesList.some(item => item.nombre.toLowerCase() === this.item.nombre.toLowerCase())) {
-                this.bSeleccion = true;
-                return;
-            }
 
             // Si es válido, puedes enviar los datos
             this.$emit('updated', this.itemLocal);
         },
         obtenerSelecciones() {
-            this.axios.get(process.env.VUE_APP_API_URL + '/selecciones')
+            this.axios.get(process.env.VUE_APP_API_URL + '/seleccions')
                 .then((response) => {
                     this.seleccionesList = response.data;
                 })

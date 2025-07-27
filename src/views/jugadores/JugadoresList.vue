@@ -10,7 +10,7 @@
     </div>
     <div class=" col-6 mb-3">
         <div class="input-group">
-            <span class="input-group-text" id="basic-addon3">Filtrar por Nombre de Selección</span>
+            <span class="input-group-text" id="basic-addon3">Filtrar por Posición</span>
             <select v-model="filtroSeleccion" id="color" class="form-select" @change="obtenerLista()">
                 <option disabled value="">-- Selecciona --</option>
                 <option value="">Todos</option>
@@ -24,10 +24,10 @@
         <table class="table table-bordered">
             <thead class="table-light">
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">nombre</th>
-                    <th scope="col">posición</th>
-                    <th scope="col">selección</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Posición</th>
+                    <th scope="col">Selección</th>
                     <th></th>
                 </tr>
             </thead>

@@ -47,13 +47,13 @@
         <table class="table table-bordered">
             <thead class="table-light">
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">fecha</th>
-                    <th scope="col">estadio</th>
-                    <th scope="col">local</th>
-                    <th scope="col">visitante</th>
-                    <th scope="col">goles local</th>
-                    <th scope="col">goles visitante</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Estadio</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Visitante</th>
+                    <th scope="col">Goles local</th>
+                    <th scope="col">Goles visitante</th>
                     <th></th>
                 </tr>
             </thead>

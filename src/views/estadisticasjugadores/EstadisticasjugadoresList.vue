@@ -13,11 +13,11 @@
         <table class="table table-bordered">
             <thead class="table-light">
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">jugador</th>
-                    <th scope="col">partido</th>
-                    <th scope="col">minutos jugados</th>
-                    <th scope="col">goles</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Jugador</th>
+                    <th scope="col">Partido</th>
+                    <th scope="col">Minutos jugados</th>
+                    <th scope="col">Goles</th>
                     <th scope="col">Tarjetas Amarillas</th>
                     <th scope="col">Tarjetas Rojas</th>
                     <th></th>

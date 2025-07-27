@@ -76,6 +76,7 @@ export default {
 
         emitir(event) {
             const form = event.target;
+            this.bJugador = false;
 
             // Si no es válido, muestra los errores con Bootstrap
             if (!form.checkValidity()) {
