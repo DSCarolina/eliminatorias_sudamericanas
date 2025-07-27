@@ -1,0 +1,203 @@
+{
+  "seleccions": [
+    {
+      "id": 1,
+      "nombre": "Argentina",
+      "tecnico": "Lionel Scaloni"
+    },
+    {
+      "id": 2,
+      "nombre": "Brasil",
+      "tecnico": "Dorival Júnior"
+    },
+    {
+      "id": 3,
+      "nombre": "Uruguay",
+      "tecnico": "Marcelo Bielsa"
+    },
+    {
+      "id": 4,
+      "nombre": "Colombia",
+      "tecnico": "Néstor Lorenzo"
+    },
+    {
+      "nombre": "Brasil",
+      "tecnico": "adsd",
+      "id": 5
+    },
+    {
+      "nombre": "Chile",
+      "tecnico": "kmdskldsdas",
+      "id": 7
+    }
+  ],
+  "partidos": [
+    {
+      "id": 1,
+      "fecha": "2025-09-15",
+      "estadio": "Estadio Monumental",
+      "localId": 1,
+      "visitanteId": 2,
+      "goles_local": 2,
+      "goles_visitante": 1
+    },
+    {
+      "id": 2,
+      "fecha": "2025-09-16",
+      "estadio": "Maracaná",
+      "localId": 2,
+      "visitanteId": 3,
+      "goles_local": 1,
+      "goles_visitante": 1
+    },
+    {
+      "id": 3,
+      "fecha": "2025-09-17",
+      "estadio": "Estadio Metropolitano",
+      "localId": 4,
+      "visitanteId": 1,
+      "goles_local": 0,
+      "goles_visitante": 3
+    },
+    {
+      "fecha": "2025-07-26",
+      "estadio": "Estadio Metropolitano",
+      "localId": 3,
+      "visitanteId": 4,
+      "goles_local": 0,
+      "goles_visitante": 0,
+      "id": 4
+    }
+  ],
+  "jugadors": [
+    {
+      "id": 1,
+      "nombre": "Lionel Messi",
+      "posicion": "Delantero",
+      "seleccionId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Emiliano Martínez",
+      "posicion": "Portero",
+      "seleccionId": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Neymar Jr",
+      "posicion": "Delantero",
+      "seleccionId": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Alisson Becker",
+      "posicion": "Portero",
+      "seleccionId": 2
+    },
+    {
+      "id": 5,
+      "nombre": "Luis Suárez",
+      "posicion": "Delantero",
+      "seleccionId": 3
+    },
+    {
+      "id": 6,
+      "nombre": "Federico Valverde",
+      "posicion": "Mediocampista",
+      "seleccionId": 3
+    },
+    {
+      "id": 7,
+      "nombre": "James Rodríguez",
+      "posicion": "Mediocampista",
+      "seleccionId": 4
+    },
+    {
+      "id": 8,
+      "nombre": "David Ospina",
+      "posicion": "Portero",
+      "seleccionId": 4
+    }
+  ],
+  "estadisticasJugadores": [
+    {
+      "id": 1,
+      "jugadorId": 1,
+      "partidoId": 1,
+      "minutos_jugados": 90,
+      "goles": 1,
+      "tarjetas_amarillas": 0,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 2,
+      "jugadorId": 3,
+      "partidoId": 1,
+      "minutos_jugados": 90,
+      "goles": 1,
+      "tarjetas_amarillas": 1,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 3,
+      "jugadorId": 5,
+      "partidoId": 2,
+      "minutos_jugados": 85,
+      "goles": 1,
+      "tarjetas_amarillas": 0,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 4,
+      "jugadorId": 4,
+      "partidoId": 2,
+      "minutos_jugados": 90,
+      "goles": 0,
+      "tarjetas_amarillas": 0,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 5,
+      "jugadorId": 7,
+      "partidoId": 3,
+      "minutos_jugados": 90,
+      "goles": 0,
+      "tarjetas_amarillas": 1,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 6,
+      "jugadorId": 2,
+      "partidoId": 1,
+      "minutos_jugados": 90,
+      "goles": 0,
+      "tarjetas_amarillas": 0,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 7,
+      "jugadorId": 6,
+      "partidoId": 2,
+      "minutos_jugados": 88,
+      "goles": 0,
+      "tarjetas_amarillas": 0,
+      "tarjetas_rojas": 0
+    },
+    {
+      "id": 8,
+      "jugadorId": 8,
+      "partidoId": 1,
+      "minutos_jugados": 90,
+      "goles": 0,
+      "tarjetas_amarillas": 0,
+      "tarjetas_rojas": 0,
+      "jugador": {
+        "id": 8,
+        "nombre": "David Ospina",
+        "posicion": "Portero",
+        "seleccionId": 4
+      },
+      "partido": 4
+    }
+  ]
+}

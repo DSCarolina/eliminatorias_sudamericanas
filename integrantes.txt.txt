@@ -1,0 +1,6 @@
+Práctica 2 Vue3 
+Nombre(s) de integrante(s): 
+- Carolina Dávila Soliz
+Pasos para iniciar el proyecto 
+1. npm install 
+2. npm run serve
