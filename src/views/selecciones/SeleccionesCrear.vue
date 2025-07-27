@@ -5,13 +5,10 @@
         <form @submit.prevent="emitir($event)" novalidate>
 
             <div class="mb-3">
-                <label class="form-label">Nombre Selección*</label>
-                <select v-model="item.nombre" class="form-select" required>
-                    <option value="">Seleccione</option>
-                    <option v-for="(value, index) in paisesList" :key="index" :value="value">{{ value }}
-                    </option>
-                </select>
-                <div class="invalid-feedback">El valor es requerido.</div>
+                <label class="form-label">Nombre Selección *</label>
+                <input v-model="item.nombre" type="text" class="form-control" required :class="{ 'is-invalid': bSeleccion }"/>
+                <div v-if="!item.nombre" class="invalid-feedback">El valor es requerido.</div>
+                <div v-if="item.nombre && bSeleccion" class="invalid-feedback">Ya existe una selección con ese nombre.</div>
             </div>
 
             <div class="mb-3">
@@ -35,16 +32,7 @@ export default {
             title: 'Agregar Selección',
             item: {},
             seleccionesList: [],
-            paisesList:[
-                "Ecuador",
-                "Brasil",
-                "Argentina",
-                "Chile",
-                "Colombia",
-                "Perú",
-                "Uruguay",
-                "Bolivia",
-            ]
+            bSeleccion: false,
         }
     },
     components: {
@@ -76,7 +64,10 @@ export default {
                 form.classList.add('was-validated');
                 return;
             }
-            console.log(this.seleccionesList);
+            if(this.seleccionesList.some(item => item.nombre.toLowerCase() === this.item.nombre.toLowerCase())) {
+                this.bSeleccion = true;
+                return;
+            }
             // Si es válido, puedes enviar los datos
             this.$emit('created', this.item);
         },

@@ -21,14 +21,14 @@
       "tecnico": "Néstor Lorenzo"
     },
     {
-      "nombre": "Brasil",
-      "tecnico": "adsd",
-      "id": 5
+      "nombre": "Chile",
+      "tecnico": "Ricardo Gareca",
+      "id": 7
     },
     {
-      "nombre": "Chile",
-      "tecnico": "kmdskldsdas",
-      "id": 7
+      "nombre": "Bolivia",
+      "tecnico": "Óscar Villegas",
+      "id": 8
     }
   ],
   "partidos": [
@@ -191,12 +191,6 @@
       "goles": 0,
       "tarjetas_amarillas": 0,
       "tarjetas_rojas": 0,
-      "jugador": {
-        "id": 8,
-        "nombre": "David Ospina",
-        "posicion": "Portero",
-        "seleccionId": 4
-      },
       "partido": 4
     }
   ]
