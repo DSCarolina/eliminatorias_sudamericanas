@@ -21,8 +21,8 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered border-secondary">
-            <thead class="table-dark">
+        <table class="table table-bordered">
+            <thead class="table-light">
                 <tr>
                     <th scope="col">id</th>
                     <th scope="col">nombre</th>
@@ -201,4 +201,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+h1 {
+color: #083F91;
+}
+</style>
